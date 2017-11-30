@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="crud" >
+<head>
+ <meta charset="UTF-8">
+ <title>Rest API Visual Client</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <!-- Incluimos el CND de Materialize CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+ <!-- Nuestro CSS personalizado -->
+ <link rel="stylesheet" href="css/custom.css">
+ <!-- Incluimos el CND de AngularJS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+ <!-- Incluimos el CND de Angular Route -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+ <!-- Incluimos el CND de la libreria jQuery -->
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+ 
+</head>
+<body ng-controller="mainCtrl">
+
+    <nav>
+      <div class="nav-wrapper blue">
+        <a href="#!/" class="brand-logo">Friki Bloggeo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <li><a href="#!/">Home</a></li>
+          <li><a href="#!/usuario">Usuario</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+          
+ <div class="container">
+  <!-- ng-view renderiza nuestras views y las muestra en el index -->
+  <div ng-view></div>
+ </div>
+     
+ <!-- Nuestro codigo JavaScript personal -->
+ <script src="js/custom.js"></script> 
+ <!-- Incluimos el CND de Materialize JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+</body>
+</html>
